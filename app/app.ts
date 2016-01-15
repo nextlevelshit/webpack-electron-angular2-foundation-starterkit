@@ -3,6 +3,7 @@ import {Component, Pipe, PipeTransform} from 'angular2/core';
 import {NgFor} from 'angular2/common';
 
 @Pipe({ name: 'byteFormat'})
+
 class ByteFormatPipe implements PipeTransform {
   // Credit: http://stackoverflow.com/a/18650828
   transform(bytes, args) {
