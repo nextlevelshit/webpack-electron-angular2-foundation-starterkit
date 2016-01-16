@@ -20,7 +20,6 @@ app.on('ready', function () {
 
   // Clear out the main window when the app is closed
   mainWindow.on('closed', function () {
-
     mainWindow = null;
   });
 

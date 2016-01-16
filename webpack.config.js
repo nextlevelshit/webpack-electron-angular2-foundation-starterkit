@@ -14,7 +14,10 @@ module.exports = {
       'angular2/router',
       'angular2/http'
     ],
-    'app': './app/app'
+    'app': [
+      './app/app',
+      './assets/scss/master'
+    ]
   },
 
   output: {
@@ -26,7 +29,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['','.ts','.js','.json', '.css', '.html']
+    extensions: ['','.ts','.js','.json', '.scss', '.css', '.html']
   },
 
   module: {
@@ -34,6 +37,11 @@ module.exports = {
       {
         test: /\.ts$/,
         loader: 'ts',
+        exclude: [ /node_modules/ ]
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"],
         exclude: [ /node_modules/ ]
       }
     ]
