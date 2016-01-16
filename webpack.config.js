@@ -15,7 +15,7 @@ module.exports = {
       'angular2/http'
     ],
     'app': [
-      './app/app',
+      './app/boot',
       './assets/scss/master'
     ]
   },

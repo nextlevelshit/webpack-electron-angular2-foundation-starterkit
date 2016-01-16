@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
     "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
-    "sass": "",
-    "develope": "npm run watch & npm run electron",
+    "dev": "npm run build & npm run watch & npm run electron",
     "electron": "electron app"
   },
   "author": "Michael Czechowski",
