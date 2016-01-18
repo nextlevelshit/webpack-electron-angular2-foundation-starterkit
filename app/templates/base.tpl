@@ -21,3 +21,9 @@
     </ul>
   </div>
 </div>
+
+<div class="row">
+  <div class="small-4 columns">4 columns</div>
+  <div class="columns">Whatever's left!</div>
+</div>
+

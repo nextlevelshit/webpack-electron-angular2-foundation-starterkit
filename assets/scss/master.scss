@@ -4,8 +4,8 @@
 *
 * Global variables, site-wide settings, config switches, etc.
 */
-
-//@import 'settings.foundation';
+@import 'settings.load-foundation';
+@import 'settings.foundation';
 
 /*----------------------------------------------------------------
 * Generic
@@ -14,7 +14,7 @@
 * Low-specificity, far-reaching rulesets (e.g. resets).
 */
 
-@import 'generic.load-foundation';
+
 
 /*----------------------------------------------------------------
 * Base

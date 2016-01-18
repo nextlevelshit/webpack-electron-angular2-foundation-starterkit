@@ -27,9 +27,8 @@ module.exports = {
       './app/boot',
       './assets/scss/master'
     ],
-    'vendor': [
-      './node_modules/jquery/dist/jquery.min.js',
-      './node_modules/foundation-sites/dist/foundation.min.js'
+    'head': [
+      './app/head'
     ]
   },
 
@@ -42,27 +41,41 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['','.ts','.js','.json', '.scss', '.css', '.html']
+    extensions: ['','.ts','.js','.json', '.scss', '.css', '.styl', '.html']
   },
 
   module: {
+    preLoaders: [
+      {
+        test: /\.json$/,
+        exclude: /node_modules/,
+        loader: 'json'},
+    ],
     loaders: [
-      { test: /\.ts$/, loader: 'ts', exclude: [ /node_modules/ ]},
-      { test: /\.scss$/, loaders: ['style', 'css', 'sass'], exclude: [ /node_modules/ ]}
+      {
+        test: /\.ts$/,
+        loader: 'ts',
+        exclude: [ /node_modules/ ]},
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass'],
+        exclude: [ /node_modules/ ]},
+      {
+        test: /\.styl$/,
+        loaders: ['css', 'stylus'],
+        exclude: [ /node_modules/ ]
+      },
+      {
+        test: /\.json$/,
+        loader: 'json' }
     ]
   },
 
   plugins: [
     new CommonsChunkPlugin({ name: 'angular2', filename: 'angular2.js', minChunks: Infinity }),
     new CommonsChunkPlugin({ name: 'common',   filename: 'common.js' }),
-    new CommonsChunkPlugin({ name: 'vendor',   filename: 'vendor.js', minChunks: Infinity }),
-    /*
-     * Include jQuery Library
-     */
     new ProvidePlugin({
-      jQuery: 'jquery',
-      $: 'jquery',
-      jquery: 'jquery'
+
     })
   ],
 
