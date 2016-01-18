@@ -7,7 +7,7 @@
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
     "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
     "dev": "npm run build & npm run watch & npm run electron",
-    "electron": "electron app"
+    "electron": "electron app/main.js"
   },
   "author": "Michael Czechowski",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "jquery": "^2.2.0",
     "node-sass": "^3.4.2",
     "sass-loader": "^3.1.2",
+    "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.3",
