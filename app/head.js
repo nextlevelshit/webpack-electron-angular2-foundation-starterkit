@@ -9,5 +9,5 @@ setTimeout(function(){
         console.log('View loaded');
         webview.insertCSS('*:hover { box-shadow: 0 0 10px #2199e8 !important; }');
     });
-}, 200);
+}, 500);
 
