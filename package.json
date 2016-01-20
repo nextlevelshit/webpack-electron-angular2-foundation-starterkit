@@ -7,7 +7,8 @@
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
     "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
     "dev": "npm run build & npm run watch & npm run electron",
-    "electron": "electron app/main.js"
+    "clean": "rm -f build/* & rm npm-debug.log*",
+    "electron": "electron src"
   },
   "author": "Michael Czechowski",
   "license": "MIT",

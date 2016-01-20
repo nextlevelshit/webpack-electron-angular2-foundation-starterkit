@@ -1,7 +1,6 @@
 /*
  * Helper: root(), and rootDir() are defined at the bottom
  */
-const autoprefixer = require('autoprefixer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 /*
@@ -13,7 +12,7 @@ var ProvidePlugin = webpack.ProvidePlugin;
 /*
  * SASS Config
  */
-const styleLoaders = [
+const sassLoaders = [
   'css',
   'sass'
 ]
@@ -33,11 +32,11 @@ const config = {
       'angular2/http'
     ],
     'app': [
-      './app/boot',
-      './assets/scss/master'
+      './src/app',
+      './src/scss'
     ],
     'head': [
-      './app/head'
+      './src/app/head'
     ]
   },
 
@@ -71,7 +70,7 @@ const config = {
         exclude: [ /node_modules/ ]},
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', styleLoaders),
+        loader: ExtractTextPlugin.extract('style', sassLoaders),
         //loaders: styleLoaders,
         //loaders: ['style', 'css', 'sass'],
         exclude: [ /node_modules/ ]},
@@ -93,11 +92,6 @@ const config = {
     new CommonsChunkPlugin({ name: 'angular2', filename: 'angular2.js', minChunks: Infinity }),
     new CommonsChunkPlugin({ name: 'common',   filename: 'common.js' }),
     new ExtractTextPlugin('[name].css')
-  ],
-  postcss: [
-    autoprefixer({
-      browsers: ['last 2 versions']
-    })
   ],
 
   target: 'node-webkit'
