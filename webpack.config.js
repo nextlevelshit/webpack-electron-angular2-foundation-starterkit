@@ -14,10 +14,8 @@ var ProvidePlugin = webpack.ProvidePlugin;
  * SASS Config
  */
 const styleLoaders = [
-  //'style',
   'css',
   'sass'
-  //'sass?indentedSyntax=scss&includePaths[]=' + path.resolve(__dirname, './assets/scss')
 ]
 /*
  * Config
@@ -35,7 +33,8 @@ const config = {
       'angular2/http'
     ],
     'app': [
-      './app/boot'
+      './app/boot',
+      './assets/scss/master'
     ],
     'head': [
       './app/head'
