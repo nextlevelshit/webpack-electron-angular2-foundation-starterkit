@@ -3,7 +3,7 @@ import {NgFor} from 'angular2/common';
 
 @Component({
   selector: 'app',
-  templateUrl: './templates/base.tpl'
+  templateUrl: './templates/base.html'
 })
 
 export class AppComponent {
