@@ -13,10 +13,11 @@ var ProvidePlugin = webpack.ProvidePlugin;
 /*
  * SASS Config
  */
-const sassLoaders = [
+const styleLoaders = [
+  //'style',
   'css',
-  'postcss',
-  'sass?indentedSyntax=sass&includePaths[]=' + path.resolve(__dirname, './assets/scss')
+  'sass'
+  //'sass?indentedSyntax=scss&includePaths[]=' + path.resolve(__dirname, './assets/scss')
 ]
 /*
  * Config
@@ -34,8 +35,7 @@ const config = {
       'angular2/http'
     ],
     'app': [
-      './app/boot',
-      './assets/scss/master'
+      './app/boot'
     ],
     'head': [
       './app/head'
@@ -72,8 +72,9 @@ const config = {
         exclude: [ /node_modules/ ]},
       {
         test: /\.scss$/,
-        //loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!')),
-        loaders: ['style', 'css', 'sass'],
+        loader: ExtractTextPlugin.extract('style', styleLoaders),
+        //loaders: styleLoaders,
+        //loaders: ['style', 'css', 'sass'],
         exclude: [ /node_modules/ ]},
       {
         test: /\.styl$/,
