@@ -10,10 +10,9 @@
     "clean": "rm -f build/* & rm npm-debug.log*",
     "electron": "electron src/browser"
   },
-  "author": "nextlevelshit (Michael Czechowski)",
+  "author": "nextlevelshit (mail@dailysh.it)",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^6.3.1",
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
@@ -26,22 +25,19 @@
     "jquery": "^2.2.0",
     "json-loader": "^0.5.4",
     "node-sass": "^3.4.2",
-    "postcss-loader": "^0.8.0",
     "sass-loader": "^3.1.2",
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.4.3",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.3",
-    "webpack": "^1.12.11",
-    "webpack-dev-server": "^1.14.0"
+    "webpack": "^1.12.11"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.0",
     "bootstrap": "^3.3.6",
     "es6-shim": "^0.33.3",
     "foundation-sites": "^6.1.1",
-    "gulp": "^3.9.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
     "zone.js": "^0.5.10"
