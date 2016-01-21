@@ -1,6 +1,6 @@
 {
-  "name": "WEAFS - Webpack Angular2 Foundation Starterkit",
-  "version": "0.0.1",
+  "name": "webpack-angular2-foundation-starterkit",
+  "version": "0.0.2",
   "description": "Prepared startkit to build desktop web apps with the newest technologies",
   "main": "browser.js",
   "scripts": {
