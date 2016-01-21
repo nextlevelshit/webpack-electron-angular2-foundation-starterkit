@@ -1,19 +1,19 @@
 /*----------------------------------------------------------------
+* External libraries
+*----------------------------------------------------------------
+*
+* Low-specificity, far-reaching rulesets (e.g. resets).
+*/
+@import '~foundation-sites/scss/foundation';
+
+/*----------------------------------------------------------------
 * Settings
 *----------------------------------------------------------------
 *
 * Global variables, site-wide settings, config switches, etc.
 */
-@import 'settings.load-foundation';
-
-/*----------------------------------------------------------------
-* Generic
-*----------------------------------------------------------------
-*
-* Low-specificity, far-reaching rulesets (e.g. resets).
-*/
-
-
+@import 'settings.foundation-variables';
+@import 'settings.foundation-includes';
 
 /*----------------------------------------------------------------
 * Base
@@ -63,17 +63,6 @@ body {
 
 //@import "objects.navigation";
 
-#browser {
-  &::shadow {
-    * {
-      &:hover {
-        box-shadow: 0 0 10px $primary-color;
-      }
-    }
-  }
-}
-
-
 /*----------------------------------------------------------------
 * Components / UI
 *----------------------------------------------------------------
@@ -83,12 +72,11 @@ body {
 
 //@import "ui.layout"; // Overall layout
 
-
 /*----------------------------------------------------------------
 * Trumps / Overrides
 *----------------------------------------------------------------
 *
-* Discrete, complete chunks of UI (e.g. .carousel {}).
+* Unavoidable properties that have to fit by 100%
 */
 
 //@import "trumps.footer";
