@@ -1,5 +1,5 @@
 # Angular2 + Electron + Webpack + Foundation6
-Everybody who likes to develope an application with the called technologies. It was kind of mess to deploye a nice workflow. All stylesheets are in SCSS and are compiled to a css file for faster develepoment.
+I've prepared a starterkit for everybody who likes to develope an application with the called technologies. It was kind of mess to deploye a nice workflow. All stylesheets are in SCSS and are compiled to a css file for faster develepoment.
  
 > Still under construction. Feel free to contribute!
 
