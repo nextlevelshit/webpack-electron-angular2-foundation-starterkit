@@ -1,5 +1,5 @@
 {
-  "name": "webpack-angular2-foundation-starterkit",
+  "name": "webpack-electron-angular2-foundation-starterkit",
   "version": "0.0.2",
   "description": "Prepared startkit to build desktop web apps with the newest technologies",
   "main": "browser.js",
@@ -35,7 +35,6 @@
   },
   "dependencies": {
     "angular2": "2.0.0-beta.0",
-    "bootstrap": "^3.3.6",
     "es6-shim": "^0.33.3",
     "foundation-sites": "^6.1.1",
     "reflect-metadata": "0.1.2",
