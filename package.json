@@ -1,8 +1,8 @@
 {
-  "name": "mini-browser-",
+  "name": "WEAFS - Webpack Angular2 Foundation Starterkit",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Prepared startkit to build desktop web apps with the newest technologies",
+  "main": "browser.js",
   "scripts": {
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
     "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
@@ -10,7 +10,7 @@
     "clean": "rm -f build/* & rm npm-debug.log*",
     "electron": "electron src/browser"
   },
-  "author": "Michael Czechowski",
+  "author": "nextlevelshit (Michael Czechowski)",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
