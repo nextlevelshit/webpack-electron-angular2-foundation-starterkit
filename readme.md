@@ -18,7 +18,7 @@ npm install webpack -g
 npm install electron-prebuilt -g
 ```
 
-
+## Delivered commands for your deployment
 ```bash
 npm install
 
