@@ -21,6 +21,7 @@ npm install electron-prebuilt -g
 
 ## Delivered commands for your deployment
 ```bash
+# Install dependencies
 npm install
 
 # To build only
