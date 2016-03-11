@@ -40,7 +40,7 @@ If you have found a bug or if you have a feature request, please report them at 
 
 ## Author
 
-[nextlevelshit](www.dailysh.it)
+[nextlevelshit](//www.dailysh.it)
 
 ## License
 
