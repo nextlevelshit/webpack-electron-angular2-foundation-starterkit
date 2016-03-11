@@ -7,7 +7,7 @@ I've prepared a starterkit for everybody who likes to develope an application wi
 This starterkit runs with Node.js, Webpack and Electron. So be sure you have installed this packages globally on your machine.
 
 ### 1. Install ```npm```
-[Install node Node.js (npm)](nodejs.org)
+[Install node Node.js (npm)](//nodejs.org)
 
 ### 2. Install the ```webpack``` comand globally
 ```bash
