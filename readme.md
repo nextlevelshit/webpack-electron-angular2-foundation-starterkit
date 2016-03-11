@@ -9,7 +9,7 @@ This starterkit runs with Node.js, Webpack and Electron. So be sure you have ins
 ### 1. Install ```npm```
 [Install node Node.js (npm)](http://nodejs.org)
 
-### 2. Install the ```webpack``` comand globally
+### 2. Install the ```webpack``` command globally
 ```bash
 npm install webpack -g
 ```
